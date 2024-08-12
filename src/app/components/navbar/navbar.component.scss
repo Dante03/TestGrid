@@ -1,0 +1,25 @@
+.content{
+    display: flex;
+    justify-content: center;
+    .list-links{
+        width: auto;
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+    }
+}
+
+    
+@media (min-width: 768px){
+    .content{
+        justify-content: center;
+    }
+}
+
+@media (min-width: 992px){
+    .content{
+        justify-content: end;
+    }
+}

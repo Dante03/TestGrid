@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* header{
+    display: grid;
+    grid-template-columns:  2fr 1fr;
+    background-color: aqua;
+    padding: 1rem 2rem;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+a{
+    color: black;
+}
+
+section{
+    padding: 2rem;
+}
+
+footer{
+    background-color: aqua;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.container{
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+} */
