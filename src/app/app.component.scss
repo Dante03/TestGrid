@@ -1,6 +1,5 @@
-
-.grid-container > *{
-    box-shadow: 10px 6px 37px -13px rgba(51,51,51,0.74);
+.grid-container>* {
+    box-shadow: 10px 6px 37px -13px rgba(51, 51, 51, 0.74);
     /* border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -9,54 +8,79 @@
     padding: 10px;
     text-align: center;
 }
-.grid-container{
+
+.grid-container {
     display: grid;
     //gap: 20px;
-    grid-template: 
-    "header" 50px
-    "navbar" 50px
-    "sidebar" 50px
-    "main" 1fr
-    "footer" 25px;
+    grid-template:
+        "header" 50px
+        "navbar" 50px
+        "sidebar" 50px
+        "main" 1fr
+        "footer" 25px;
     min-height: 100dvh;
-    .header{
+
+    .header {
         grid-area: header;
         background-color: red;
     }
-    .navbar{
+
+    .navbar {
         grid-area: navbar;
         background-color: greenyellow;
+        display: flex;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
     }
-    .sidebar{
+
+    .sidebar {
         grid-area: sidebar;
         background-color: palevioletred;
     }
-    .main{
+
+    .main {
         grid-area: main;
         background-color: olive;
     }
-    .footer{
+
+    .footer {
         grid-area: footer;
         background-color: violet;
         padding: 0;
         align-content: center;
     }
-    @media (min-width: 768px){
-        grid-template: 
-        "header navbar" 25px
-        "header navbar" 25px
-        "sidebar main" auto
-        "footer footer" 30px/
-        200px 1fr
+
+    @media (min-width: 768px) {
+        grid-template:
+            "header navbar" 25px
+            "header navbar" 25px
+            "sidebar main" auto
+            "footer footer" 30px/
+            200px 1fr
         ;
+
+        .navbar {
+            display: flex;
+            padding: 0;
+            align-items: center;
+            justify-content: flex-end;
+        }
     }
 
-    @media (min-width: 992px){
-        grid-template: 
-        "header navbar navbar" 50px
-        "sidebar main main" auto
-        "footer footer footer" 30px/
-        200px 1fr 1fr
+    @media (min-width: 992px) {
+        grid-template:
+            "header navbar navbar" 50px
+            "sidebar main main" auto
+            "footer footer footer" 30px/
+            200px 1fr 1fr
         ;
+
+        .navbar {
+            display: flex;
+            padding: 0;
+            align-items: center;
+            justify-content: flex-end;
+        }
     }
 }
