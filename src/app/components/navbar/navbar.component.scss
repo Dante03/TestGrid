@@ -1,9 +1,16 @@
-.content{
-    display: flex;
+.content {
+    display: grid;
+    grid-template: "list-links list-links" auto;
     justify-content: center;
-    .list-links{
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+
+    .list-links {
         width: auto;
-        ul{
+        grid-area: list-links;
+
+        ul {
             list-style: none;
             display: flex;
             gap: 1rem;
@@ -11,15 +18,15 @@
     }
 }
 
-    
-@media (min-width: 768px){
-    .content{
+@media (min-width: 768px) {
+    .content {
+        grid-template: "list-links " 1fr / 1fr;
         justify-content: center;
     }
 }
 
-@media (min-width: 992px){
-    .content{
-        justify-content: end;
+@media (min-width: 992px) {
+    .content {
+        grid-template: "item list-links" 1fr / 1fr 1fr;
     }
 }
